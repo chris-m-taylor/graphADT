@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f6e46146-648d-44a1-bf8b-eea0357885d7" name="Default Changelist" comment="" />
+    <list default="true" id="f6e46146-648d-44a1-bf8b-eea0357885d7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GraphADT.docx" beforeDir="false" afterPath="$PROJECT_DIR$/GraphADT.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/graphADT/UndirectedGraph.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/graphADT/UndirectedGraph.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UndirectedGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UndirectedGraph.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,7 +20,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1jkrYidyKjiDmFqreiEg9O4FbxQ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -26,10 +36,11 @@
     <property name="Repository.Attach.JavaDocs" value="true" />
     <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="settings.github" />
+    <property name="settings.editor.selected.configurable" value="project.propCompiler" />
   </component>
   <component name="RunManager">
     <configuration name="UndirectedGraph" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -71,14 +82,30 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="315" y="83" key="SettingsEditor" timestamp="1604700199058">
+    <state width="1321" height="257" key="GridCell.Tab.0.bottom" timestamp="1604716634266">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state x="315" y="83" key="SettingsEditor/-3360.860.1440.877/-1920.-18.1920.1057/0.23.1920.1057@0.23.1920.1057" timestamp="1604700199058" />
-    <state x="464" y="284" key="com.intellij.ide.util.TipDialog" timestamp="1604696452297">
+    <state width="1321" height="257" key="GridCell.Tab.0.bottom/-3360.860.1440.877/-1920.-18.1920.1057/0.23.1920.1057@0.23.1920.1057" timestamp="1604716634266" />
+    <state width="1321" height="257" key="GridCell.Tab.0.center" timestamp="1604716634265">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state x="464" y="284" key="com.intellij.ide.util.TipDialog/-3360.860.1440.877/-1920.-18.1920.1057/0.23.1920.1057@0.23.1920.1057" timestamp="1604696452297" />
+    <state width="1321" height="257" key="GridCell.Tab.0.center/-3360.860.1440.877/-1920.-18.1920.1057/0.23.1920.1057@0.23.1920.1057" timestamp="1604716634265" />
+    <state width="1321" height="257" key="GridCell.Tab.0.left" timestamp="1604716634265">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1321" height="257" key="GridCell.Tab.0.left/-3360.860.1440.877/-1920.-18.1920.1057/0.23.1920.1057@0.23.1920.1057" timestamp="1604716634265" />
+    <state width="1321" height="257" key="GridCell.Tab.0.right" timestamp="1604716634266">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1321" height="257" key="GridCell.Tab.0.right/-3360.860.1440.877/-1920.-18.1920.1057/0.23.1920.1057@0.23.1920.1057" timestamp="1604716634266" />
+    <state x="315" y="83" key="SettingsEditor" timestamp="1604714437788">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state x="315" y="83" key="SettingsEditor/-3360.860.1440.877/-1920.-18.1920.1057/0.23.1920.1057@0.23.1920.1057" timestamp="1604714437788" />
+    <state x="464" y="284" key="com.intellij.ide.util.TipDialog" timestamp="1604714943301">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state x="464" y="284" key="com.intellij.ide.util.TipDialog/-3360.860.1440.877/-1920.-18.1920.1057/0.23.1920.1057@0.23.1920.1057" timestamp="1604714943301" />
     <state x="553" y="402" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1604699700271">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
