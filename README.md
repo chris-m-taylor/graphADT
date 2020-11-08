@@ -1,6 +1,6 @@
 # graphADT
 
-This project's goal was to create an implementation of a graph abstract data type and perform several different operations on graphs that we create. I used the library JgrapT as my graphADT that I could use to create and manipulate the graphs, as well as run algorithms on in order to check graph properties. 
+This project's goal was to create an implementation of a graph abstract data type and perform several different operations on graphs that we create. I used the library JgraphT as my graphADT that I could use to create and manipulate the graphs, as well as run algorithms on in order to check graph properties. 
 
 ## Problems to Solve  
 1.  Create undirected graphs of sizes of 10, 100, 10000 nodes with the number of edges being 80% of nC2. Example: If the graph has 10 nodes, then the number of edges should be 45 and every node should have at least an edge. The edges can be randomly connected to the nodes. Test the graph that you are created such that every node has an edge. 
