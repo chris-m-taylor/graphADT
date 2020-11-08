@@ -84,6 +84,8 @@ public class UndirectedGraph {
     //make graph bipartite
     public static Graph<String, DefaultEdge> makeBipartite(Graph<String, DefaultEdge> graphX)
     {
+        int numVertex = graphX.vertexSet().size();
+        int numEdges = graphX.edgeSet().size();
 
         //add vertexes to graph
         Graph<String, DefaultEdge> graph = new DefaultDirectedGraph<>(DefaultEdge.class);
@@ -91,6 +93,29 @@ public class UndirectedGraph {
             graph.addVertex(Integer.toString(i));
         }
 
+        //add random edges to graph
+        // graph one
+        int i = 0;
+        int min1 = 0;
+        int max1 = numVertex;
+        // n^2 * .25 == the maximum amount of edges you can have to be bipartite
+        while (i < numVertex*numVertex *.25 ){
+            // random numbers
+            int rand1 = (int)(Math.random() * (max1 - min1) + min1);
+            int rand2 = (int)(Math.random() * (max1 - min1) + min1);
+            String strRand1 = Integer.toString(rand1);
+            String strRand2 = Integer.toString(rand2);
+
+
+            // if the numbers are not the same and the graph does not contain the edge already and one edge is odd and the other even || (rand1%2 == 0)
+            if (!( (rand1 == rand2) || graph.containsEdge(strRand1, strRand2) || ((rand1+rand2)%2 == 0) || graph.containsEdge(strRand2, strRand1) ))
+            {
+                if(rand1%2 == 0){
+                    graph.addEdge(strRand1, strRand2);
+                    i++;
+                }
+            }
+        }
 
         return graph;
     }
@@ -201,5 +226,10 @@ public class UndirectedGraph {
         System.out.println("Size 10 Graph: " + GraphTests.isBipartite(bigraph1));
         System.out.println("Size 100 Graph: " + GraphTests.isBipartite(bigraph2));
         System.out.println("Size 1000 Graph: " + GraphTests.isBipartite(bigraph3));
+
+        System.out.println("\nPrinting out the bipartite graphs (There should be no even connection to an odd connection)");
+        System.out.println("Size 10 Graph: " + bigraph1);
+        System.out.println("Size 100 Graph: " + bigraph2);
+        System.out.println("Size 1000 Graph: TOO BIG TO PRINT");
     }
 }
