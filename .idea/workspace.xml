@@ -80,22 +80,22 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1542" height="454" key="GridCell.Tab.0.bottom" timestamp="1604865016526">
+    <state width="1542" height="334" key="GridCell.Tab.0.bottom" timestamp="1604867208974">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state width="1542" height="454" key="GridCell.Tab.0.bottom/-3360.860.1440.877/-1920.-18.1920.1057/0.23.1920.1057@0.23.1920.1057" timestamp="1604865016526" />
-    <state width="1542" height="454" key="GridCell.Tab.0.center" timestamp="1604865016524">
+    <state width="1542" height="334" key="GridCell.Tab.0.bottom/-3360.860.1440.877/-1920.-18.1920.1057/0.23.1920.1057@0.23.1920.1057" timestamp="1604867208974" />
+    <state width="1542" height="334" key="GridCell.Tab.0.center" timestamp="1604867208973">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state width="1542" height="454" key="GridCell.Tab.0.center/-3360.860.1440.877/-1920.-18.1920.1057/0.23.1920.1057@0.23.1920.1057" timestamp="1604865016524" />
-    <state width="1542" height="454" key="GridCell.Tab.0.left" timestamp="1604865016524">
+    <state width="1542" height="334" key="GridCell.Tab.0.center/-3360.860.1440.877/-1920.-18.1920.1057/0.23.1920.1057@0.23.1920.1057" timestamp="1604867208973" />
+    <state width="1542" height="334" key="GridCell.Tab.0.left" timestamp="1604867208973">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state width="1542" height="454" key="GridCell.Tab.0.left/-3360.860.1440.877/-1920.-18.1920.1057/0.23.1920.1057@0.23.1920.1057" timestamp="1604865016524" />
-    <state width="1542" height="454" key="GridCell.Tab.0.right" timestamp="1604865016525">
+    <state width="1542" height="334" key="GridCell.Tab.0.left/-3360.860.1440.877/-1920.-18.1920.1057/0.23.1920.1057@0.23.1920.1057" timestamp="1604867208973" />
+    <state width="1542" height="334" key="GridCell.Tab.0.right" timestamp="1604867208974">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state width="1542" height="454" key="GridCell.Tab.0.right/-3360.860.1440.877/-1920.-18.1920.1057/0.23.1920.1057@0.23.1920.1057" timestamp="1604865016525" />
+    <state width="1542" height="334" key="GridCell.Tab.0.right/-3360.860.1440.877/-1920.-18.1920.1057/0.23.1920.1057@0.23.1920.1057" timestamp="1604867208974" />
     <state x="493" y="171" key="SettingsEditor" timestamp="1604720185791">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
@@ -108,5 +108,9 @@
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
     <state x="553" y="402" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/-3360.860.1440.877/-1920.-18.1920.1057/0.23.1920.1057@0.23.1920.1057" timestamp="1604720184003" />
+    <state x="442" y="174" width="639" height="729" key="find.popup" timestamp="1604866504032">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state x="442" y="174" width="639" height="729" key="find.popup/-3360.860.1440.877/-1920.-18.1920.1057/0.23.1920.1057@0.23.1920.1057" timestamp="1604866504032" />
   </component>
 </project>

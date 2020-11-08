@@ -1,14 +1,7 @@
 import org.jgrapht.*;
-import org.jgrapht.alg.connectivity.ConnectivityInspector;
 import org.jgrapht.alg.connectivity.KosarajuStrongConnectivityInspector;
 import org.jgrapht.graph.*;
-import org.jgrapht.alg.*;
-import org.jgrapht.nio.*;
-import org.jgrapht.nio.dot.*;
-import org.jgrapht.traverse.*;
-
 import java.util.*;
-import java.io.*;
 
 public class UndirectedGraph {
 
@@ -123,15 +116,22 @@ public class UndirectedGraph {
         Graph<String, DefaultEdge> graph2 = makeUndirectedGraph(100, 3960);
         Graph<String, DefaultEdge> graph3 = makeUndirectedGraph(1000, 399600);
 
-        //System.out.println(graph1);
-        //System.out.println(graph2);
-        //System.out.println(graph3);
+        System.out.println("\nPrinting Undirected Graphs...");
+        System.out.println("Size 10 Graph: " + graph1);
+        System.out.println("Size 100 Graph: " + graph2);
+        System.out.println("Size 1000 Graph: TOO BIG TO PRINT");// + graph3);
 
         // check to see if every node has and edge
-        System.out.println("Checking to see if every vertex has an edge...");
+        System.out.println("\nChecking to see if every vertex has an edge...");
         System.out.println("Size 10 Graph: " + checkGraph(graph1));
         System.out.println("Size 100 Graph: " + checkGraph(graph2));
         System.out.println("Size 1000 Graph: " + checkGraph(graph3));
+
+        // check to see if every node has and edge
+        System.out.println("\nChecking to see how many edges each graph has... (Expected is 36, 3960, and 399600)");
+        System.out.println("Size 10 Graph: " + graph1.edgeSet().size());
+        System.out.println("Size 100 Graph: " + graph2.edgeSet().size());
+        System.out.println("Size 1000 Graph: " + graph3.edgeSet().size());
 
         // Create Directed graphs of size 10, 100, and 1000
         Graph<String, DefaultEdge> digraph1 = makeDirectedGraph(10, 36);
@@ -181,9 +181,10 @@ public class UndirectedGraph {
         System.out.println("Size 1000 Graph: " + timeTaken + " milliseconds");
 
         //print out strongly connected components
-        //System.out.println(strongSet1);
-        //System.out.println(strongSet2);
-        //System.out.println(strongSet3);
+        System.out.println("\nThe strongly connected components are as follows...");
+        System.out.println("Size 10 Graph: " + strongSet1);
+        System.out.println("Size 100 Graph: " + strongSet2);
+        System.out.println("Size 1000 Graph: " + strongSet3);
 
 
         System.out.println("\nChecking to see if graphs are bipartite before making them bipartite...");
@@ -200,12 +201,5 @@ public class UndirectedGraph {
         System.out.println("Size 10 Graph: " + GraphTests.isBipartite(bigraph1));
         System.out.println("Size 100 Graph: " + GraphTests.isBipartite(bigraph2));
         System.out.println("Size 1000 Graph: " + GraphTests.isBipartite(bigraph3));
-
-
-
-
-
-
-
     }
 }
