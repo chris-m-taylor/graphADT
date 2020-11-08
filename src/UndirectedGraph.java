@@ -88,6 +88,19 @@ public class UndirectedGraph {
         return (graph);
     }
 
+    //make graph bipartite
+    public static Graph<String, DefaultEdge> makeBipartite(Graph<String, DefaultEdge> graphX)
+    {
+
+        //add vertexes to graph
+        Graph<String, DefaultEdge> graph = new DefaultDirectedGraph<>(DefaultEdge.class);
+        for (int i=0; i < graphX.vertexSet().size(); i++){
+            graph.addVertex(Integer.toString(i));
+        }
+
+
+        return graph;
+    }
 
     public static boolean checkGraph(Graph<String, DefaultEdge> graph)
     {
@@ -126,20 +139,67 @@ public class UndirectedGraph {
         Graph<String, DefaultEdge> digraph3 = makeDirectedGraph(1000, 399600);
 
         //Compute the strongly connected sets
-        //record time taken
 
+        System.out.println("\nCalclulating the time taken to find strongly connected components of each graph...");
+        //record time taken
+        long timeNow;
+        long timeAfter;
+        long timeTaken;
+
+
+        // Grab time before, perform search for strongly connected component, then grab time after
+        timeNow = System.currentTimeMillis();
         KosarajuStrongConnectivityInspector<String, DefaultEdge> inspector1 = new KosarajuStrongConnectivityInspector<>(digraph1);
         List<Set<String>> strongSet1 = inspector1.stronglyConnectedSets();
+        timeAfter = System.currentTimeMillis();
 
+        // Calculate time taken to perform the search of strongly connects components
+        timeTaken = timeAfter - timeNow;
+        System.out.println("Size 10 Graph: " + timeTaken + " milliseconds");
+
+
+        // Grab time before, perform search for strongly connected component, then grab time after
+        timeNow = System.currentTimeMillis();
         KosarajuStrongConnectivityInspector<String, DefaultEdge> inspector2 = new KosarajuStrongConnectivityInspector<>(digraph2);
         List<Set<String>> strongSet2 = inspector2.stronglyConnectedSets();
+        timeAfter = System.currentTimeMillis();
 
+
+        // Calculate time taken to perform the search of strongly connects components
+        timeTaken = timeAfter - timeNow;
+        System.out.println("Size 100 Graph: " + timeTaken + " milliseconds");
+
+
+        // Grab time before, perform search for strongly connected component, then grab time after
+        timeNow = System.currentTimeMillis();
         KosarajuStrongConnectivityInspector<String, DefaultEdge> inspector3 = new KosarajuStrongConnectivityInspector<>(digraph3);
         List<Set<String>> strongSet3 = inspector3.stronglyConnectedSets();
+        timeAfter = System.currentTimeMillis();
 
-        System.out.println(strongSet1);
-        System.out.println(strongSet2);
-        System.out.println(strongSet3);
+        // Calculate time taken to perform the search of strongly connects components
+        timeTaken = timeAfter - timeNow;
+        System.out.println("Size 1000 Graph: " + timeTaken + " milliseconds");
+
+        //print out strongly connected components
+        //System.out.println(strongSet1);
+        //System.out.println(strongSet2);
+        //System.out.println(strongSet3);
+
+
+        System.out.println("\nChecking to see if graphs are bipartite before making them bipartite...");
+        System.out.println("Size 10 Graph: " + GraphTests.isBipartite(digraph1));
+        System.out.println("Size 100 Graph: " + GraphTests.isBipartite(digraph2));
+        System.out.println("Size 1000 Graph: " + GraphTests.isBipartite(digraph3));
+
+        //make graphs bipartite using method described in homework document
+        Graph<String, DefaultEdge> bigraph1 = makeBipartite(digraph1);
+        Graph<String, DefaultEdge> bigraph2 = makeBipartite(digraph2);
+        Graph<String, DefaultEdge> bigraph3 = makeBipartite(digraph3);
+
+        System.out.println("\nChecking to see if graphs are bipartite after making them bipartite...");
+        System.out.println("Size 10 Graph: " + GraphTests.isBipartite(bigraph1));
+        System.out.println("Size 100 Graph: " + GraphTests.isBipartite(bigraph2));
+        System.out.println("Size 1000 Graph: " + GraphTests.isBipartite(bigraph3));
 
 
 
